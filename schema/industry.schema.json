@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://infinityxonesystems.com/schemas/industry.schema.json",
+  "title": "Industry",
+  "description": "Schema for industry and sub-industry data",
+  "type": "object",
+  "properties": {
+    "industries": {
+      "type": "array",
+      "description": "Array of industry entries",
+      "items": {
+        "$ref": "#/definitions/industry"
+      }
+    }
+  },
+  "required": ["industries"],
+  "definitions": {
+    "industry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the industry"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the industry"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description of the industry"
+        },
+        "sector": {
+          "type": "string",
+          "description": "Primary economic sector",
+          "enum": [
+            "Agriculture",
+            "Mining",
+            "Construction",
+            "Manufacturing",
+            "Transportation",
+            "Wholesale Trade",
+            "Retail Trade",
+            "Finance",
+            "Services",
+            "Public Administration",
+            "Information Technology",
+            "Healthcare",
+            "Education",
+            "Energy",
+            "Real Estate",
+            "Entertainment",
+            "Hospitality"
+          ]
+        },
+        "naicsCode": {
+          "type": "string",
+          "description": "NAICS (North American Industry Classification System) code",
+          "pattern": "^[0-9]{2,6}$"
+        },
+        "sicCode": {
+          "type": "string",
+          "description": "SIC (Standard Industrial Classification) code",
+          "pattern": "^[0-9]{4}$"
+        },
+        "subIndustries": {
+          "type": "array",
+          "description": "Array of sub-industry entries",
+          "items": {
+            "$ref": "#/definitions/subIndustry"
+          }
+        }
+      },
+      "required": ["id", "name", "description", "sector"]
+    },
+    "subIndustry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the sub-industry"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the sub-industry"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description of the sub-industry"
+        },
+        "naicsCode": {
+          "type": "string",
+          "description": "NAICS code for the sub-industry",
+          "pattern": "^[0-9]{2,6}$"
+        },
+        "sicCode": {
+          "type": "string",
+          "description": "SIC code for the sub-industry",
+          "pattern": "^[0-9]{4}$"
+        }
+      },
+      "required": ["id", "name", "description"]
+    }
+  }
+}
