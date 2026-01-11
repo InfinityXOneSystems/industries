@@ -1,0 +1,548 @@
+{
+  "$schema": "../schema/industry.schema.json",
+  "industries": [
+    {
+      "id": "agriculture",
+      "name": "Agriculture, Forestry, Fishing and Hunting",
+      "description": "Industries involved in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from farms, ranches, or natural habitats.",
+      "sector": "Agriculture",
+      "naicsCode": "11",
+      "subIndustries": [
+        {
+          "id": "crop-production",
+          "name": "Crop Production",
+          "description": "Growing and harvesting crops including grains, vegetables, fruits, and tree nuts.",
+          "naicsCode": "111"
+        },
+        {
+          "id": "animal-production",
+          "name": "Animal Production and Aquaculture",
+          "description": "Raising and fattening animals, and aquaculture for food, fiber, and other products.",
+          "naicsCode": "112"
+        },
+        {
+          "id": "forestry-logging",
+          "name": "Forestry and Logging",
+          "description": "Growing and harvesting timber on a long production cycle.",
+          "naicsCode": "113"
+        },
+        {
+          "id": "fishing-hunting",
+          "name": "Fishing, Hunting and Trapping",
+          "description": "Harvesting fish and other wild animals from their natural habitats.",
+          "naicsCode": "114"
+        }
+      ]
+    },
+    {
+      "id": "mining",
+      "name": "Mining, Quarrying, and Oil and Gas Extraction",
+      "description": "Extracting naturally occurring mineral solids, liquid minerals, and gases from the earth.",
+      "sector": "Mining",
+      "naicsCode": "21",
+      "subIndustries": [
+        {
+          "id": "oil-gas-extraction",
+          "name": "Oil and Gas Extraction",
+          "description": "Operating and developing oil and gas field properties, including exploration.",
+          "naicsCode": "211"
+        },
+        {
+          "id": "mining-except-oil-gas",
+          "name": "Mining (except Oil and Gas)",
+          "description": "Mining, beneficiating, and preparing metallic and nonmetallic minerals.",
+          "naicsCode": "212"
+        },
+        {
+          "id": "support-mining",
+          "name": "Support Activities for Mining",
+          "description": "Performing support activities on a contract or fee basis for the mining sector.",
+          "naicsCode": "213"
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "name": "Construction",
+      "description": "Building and engineering projects including residential, commercial, industrial construction and infrastructure.",
+      "sector": "Construction",
+      "naicsCode": "23",
+      "subIndustries": [
+        {
+          "id": "building-construction",
+          "name": "Construction of Buildings",
+          "description": "Construction of residential and nonresidential buildings.",
+          "naicsCode": "236"
+        },
+        {
+          "id": "heavy-civil-engineering",
+          "name": "Heavy and Civil Engineering Construction",
+          "description": "Construction of highways, streets, bridges, tunnels, and utility systems.",
+          "naicsCode": "237"
+        },
+        {
+          "id": "specialty-trade-contractors",
+          "name": "Specialty Trade Contractors",
+          "description": "Specialized construction activities such as plumbing, electrical, and masonry.",
+          "naicsCode": "238"
+        }
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "name": "Manufacturing",
+      "description": "Mechanical, physical, or chemical transformation of materials into new products.",
+      "sector": "Manufacturing",
+      "naicsCode": "31-33",
+      "subIndustries": [
+        {
+          "id": "food-manufacturing",
+          "name": "Food Manufacturing",
+          "description": "Transforming livestock and agricultural products into products for intermediate or final consumption.",
+          "naicsCode": "311"
+        },
+        {
+          "id": "beverage-tobacco",
+          "name": "Beverage and Tobacco Product Manufacturing",
+          "description": "Manufacturing beverages and tobacco products.",
+          "naicsCode": "312"
+        },
+        {
+          "id": "textile-mills",
+          "name": "Textile Mills",
+          "description": "Transforming fibers into yarn, thread, or fabric.",
+          "naicsCode": "313"
+        },
+        {
+          "id": "apparel-manufacturing",
+          "name": "Apparel Manufacturing",
+          "description": "Manufacturing of apparel and accessories from fabrics and materials.",
+          "naicsCode": "315"
+        },
+        {
+          "id": "chemical-manufacturing",
+          "name": "Chemical Manufacturing",
+          "description": "Transforming organic and inorganic raw materials by a chemical process.",
+          "naicsCode": "325"
+        },
+        {
+          "id": "pharmaceutical-manufacturing",
+          "name": "Pharmaceutical and Medicine Manufacturing",
+          "description": "Manufacturing pharmaceutical and medicine products.",
+          "naicsCode": "3254"
+        },
+        {
+          "id": "computer-electronics",
+          "name": "Computer and Electronic Product Manufacturing",
+          "description": "Manufacturing computers, computer peripherals, and electronic components.",
+          "naicsCode": "334"
+        },
+        {
+          "id": "transportation-equipment",
+          "name": "Transportation Equipment Manufacturing",
+          "description": "Manufacturing equipment for transporting people and goods.",
+          "naicsCode": "336"
+        }
+      ]
+    },
+    {
+      "id": "wholesale-trade",
+      "name": "Wholesale Trade",
+      "description": "Selling merchandise to retailers, industrial, commercial, or institutional users.",
+      "sector": "Wholesale Trade",
+      "naicsCode": "42",
+      "subIndustries": [
+        {
+          "id": "merchant-wholesalers-durable",
+          "name": "Merchant Wholesalers, Durable Goods",
+          "description": "Wholesaling durable goods such as motor vehicles, furniture, and machinery.",
+          "naicsCode": "423"
+        },
+        {
+          "id": "merchant-wholesalers-nondurable",
+          "name": "Merchant Wholesalers, Nondurable Goods",
+          "description": "Wholesaling nondurable goods such as paper, chemicals, and grocery items.",
+          "naicsCode": "424"
+        }
+      ]
+    },
+    {
+      "id": "retail-trade",
+      "name": "Retail Trade",
+      "description": "Selling merchandise generally without transformation to the general public.",
+      "sector": "Retail Trade",
+      "naicsCode": "44-45",
+      "subIndustries": [
+        {
+          "id": "motor-vehicle-dealers",
+          "name": "Motor Vehicle and Parts Dealers",
+          "description": "Retailing new and used motor vehicles and parts.",
+          "naicsCode": "441"
+        },
+        {
+          "id": "food-beverage-stores",
+          "name": "Food and Beverage Stores",
+          "description": "Retailing food and beverages from fixed locations.",
+          "naicsCode": "445"
+        },
+        {
+          "id": "general-merchandise",
+          "name": "General Merchandise Stores",
+          "description": "Retailing new goods in department stores and other general merchandise retailers.",
+          "naicsCode": "452"
+        },
+        {
+          "id": "ecommerce",
+          "name": "Electronic Shopping and Mail-Order Houses",
+          "description": "Retailing merchandise through electronic media or mail-order catalogs.",
+          "naicsCode": "4541"
+        }
+      ]
+    },
+    {
+      "id": "transportation-warehousing",
+      "name": "Transportation and Warehousing",
+      "description": "Transporting passengers and cargo, warehousing and storage, and related support activities.",
+      "sector": "Transportation",
+      "naicsCode": "48-49",
+      "subIndustries": [
+        {
+          "id": "air-transportation",
+          "name": "Air Transportation",
+          "description": "Providing air transportation of passengers and cargo.",
+          "naicsCode": "481"
+        },
+        {
+          "id": "rail-transportation",
+          "name": "Rail Transportation",
+          "description": "Providing rail transportation of passengers and cargo.",
+          "naicsCode": "482"
+        },
+        {
+          "id": "truck-transportation",
+          "name": "Truck Transportation",
+          "description": "Providing over-the-road transportation of cargo.",
+          "naicsCode": "484"
+        },
+        {
+          "id": "warehousing-storage",
+          "name": "Warehousing and Storage",
+          "description": "Operating warehousing and storage facilities.",
+          "naicsCode": "493"
+        }
+      ]
+    },
+    {
+      "id": "information",
+      "name": "Information",
+      "description": "Producing and distributing information and cultural products, and providing data processing.",
+      "sector": "Information Technology",
+      "naicsCode": "51",
+      "subIndustries": [
+        {
+          "id": "publishing",
+          "name": "Publishing Industries",
+          "description": "Publishing newspapers, periodicals, books, and software.",
+          "naicsCode": "511"
+        },
+        {
+          "id": "motion-picture",
+          "name": "Motion Picture and Sound Recording Industries",
+          "description": "Producing and distributing motion pictures and sound recordings.",
+          "naicsCode": "512"
+        },
+        {
+          "id": "broadcasting",
+          "name": "Broadcasting (except Internet)",
+          "description": "Creating content or acquiring broadcasting rights and generating revenues.",
+          "naicsCode": "515"
+        },
+        {
+          "id": "telecommunications",
+          "name": "Telecommunications",
+          "description": "Operating and providing access to telecommunications infrastructure.",
+          "naicsCode": "517"
+        },
+        {
+          "id": "data-processing",
+          "name": "Data Processing, Hosting, and Related Services",
+          "description": "Providing infrastructure for hosting and data processing services.",
+          "naicsCode": "518"
+        }
+      ]
+    },
+    {
+      "id": "finance-insurance",
+      "name": "Finance and Insurance",
+      "description": "Financial transactions and facilitating financial transactions, including insurance and related activities.",
+      "sector": "Finance",
+      "naicsCode": "52",
+      "subIndustries": [
+        {
+          "id": "credit-intermediation",
+          "name": "Credit Intermediation and Related Activities",
+          "description": "Lending funds raised from depositors and other sources.",
+          "naicsCode": "522"
+        },
+        {
+          "id": "securities",
+          "name": "Securities, Commodity Contracts, and Investments",
+          "description": "Underwriting, making markets, and dealing in securities.",
+          "naicsCode": "523"
+        },
+        {
+          "id": "insurance-carriers",
+          "name": "Insurance Carriers and Related Activities",
+          "description": "Underwriting annuities and insurance policies.",
+          "naicsCode": "524"
+        },
+        {
+          "id": "investment-funds",
+          "name": "Funds, Trusts, and Other Financial Vehicles",
+          "description": "Pooling securities or other assets on behalf of shareholders.",
+          "naicsCode": "525"
+        }
+      ]
+    },
+    {
+      "id": "real-estate",
+      "name": "Real Estate and Rental and Leasing",
+      "description": "Renting, leasing, or allowing use of tangible or intangible assets.",
+      "sector": "Real Estate",
+      "naicsCode": "53",
+      "subIndustries": [
+        {
+          "id": "real-estate-services",
+          "name": "Real Estate",
+          "description": "Renting or leasing real estate, managing real estate, and related services.",
+          "naicsCode": "531"
+        },
+        {
+          "id": "rental-leasing",
+          "name": "Rental and Leasing Services",
+          "description": "Renting or leasing tangible goods such as automobiles and equipment.",
+          "naicsCode": "532"
+        }
+      ]
+    },
+    {
+      "id": "professional-services",
+      "name": "Professional, Scientific, and Technical Services",
+      "description": "Performing professional, scientific, and technical activities for others.",
+      "sector": "Services",
+      "naicsCode": "54",
+      "subIndustries": [
+        {
+          "id": "legal-services",
+          "name": "Legal Services",
+          "description": "Providing legal advice, representation, and related services.",
+          "naicsCode": "5411"
+        },
+        {
+          "id": "accounting-services",
+          "name": "Accounting, Tax Preparation, and Payroll Services",
+          "description": "Providing accounting, tax preparation, bookkeeping, and payroll services.",
+          "naicsCode": "5412"
+        },
+        {
+          "id": "architectural-engineering",
+          "name": "Architectural, Engineering, and Related Services",
+          "description": "Providing architectural, engineering, and specialized design services.",
+          "naicsCode": "5413"
+        },
+        {
+          "id": "computer-systems-design",
+          "name": "Computer Systems Design and Related Services",
+          "description": "Planning and designing computer systems, providing software development.",
+          "naicsCode": "5415"
+        },
+        {
+          "id": "management-consulting",
+          "name": "Management, Scientific, and Technical Consulting Services",
+          "description": "Providing advice and assistance on management and technical issues.",
+          "naicsCode": "5416"
+        },
+        {
+          "id": "advertising-pr",
+          "name": "Advertising, Public Relations, and Related Services",
+          "description": "Creating advertising campaigns and public relations activities.",
+          "naicsCode": "5418"
+        }
+      ]
+    },
+    {
+      "id": "healthcare",
+      "name": "Health Care and Social Assistance",
+      "description": "Providing health care and social assistance for individuals.",
+      "sector": "Healthcare",
+      "naicsCode": "62",
+      "subIndustries": [
+        {
+          "id": "ambulatory-healthcare",
+          "name": "Ambulatory Health Care Services",
+          "description": "Providing health care services directly to outpatients.",
+          "naicsCode": "621"
+        },
+        {
+          "id": "hospitals",
+          "name": "Hospitals",
+          "description": "Providing medical, diagnostic, and treatment services to inpatients.",
+          "naicsCode": "622"
+        },
+        {
+          "id": "nursing-care",
+          "name": "Nursing and Residential Care Facilities",
+          "description": "Providing residential care combined with nursing or other health care.",
+          "naicsCode": "623"
+        },
+        {
+          "id": "social-assistance",
+          "name": "Social Assistance",
+          "description": "Providing social assistance services to individuals and families.",
+          "naicsCode": "624"
+        }
+      ]
+    },
+    {
+      "id": "entertainment-recreation",
+      "name": "Arts, Entertainment, and Recreation",
+      "description": "Operating facilities or providing services to meet cultural, entertainment, and recreational interests.",
+      "sector": "Entertainment",
+      "naicsCode": "71",
+      "subIndustries": [
+        {
+          "id": "performing-arts",
+          "name": "Performing Arts, Spectator Sports, and Related Industries",
+          "description": "Producing or organizing live performances, events, and sports.",
+          "naicsCode": "711"
+        },
+        {
+          "id": "museums-historical",
+          "name": "Museums, Historical Sites, and Similar Institutions",
+          "description": "Preserving and exhibiting objects, sites, and natural wonders.",
+          "naicsCode": "712"
+        },
+        {
+          "id": "amusement-recreation",
+          "name": "Amusement, Gambling, and Recreation Industries",
+          "description": "Operating facilities for amusement, gambling, and recreation activities.",
+          "naicsCode": "713"
+        }
+      ]
+    },
+    {
+      "id": "accommodation-food",
+      "name": "Accommodation and Food Services",
+      "description": "Providing lodging and preparing meals, snacks, and beverages for immediate consumption.",
+      "sector": "Hospitality",
+      "naicsCode": "72",
+      "subIndustries": [
+        {
+          "id": "accommodation",
+          "name": "Accommodation",
+          "description": "Providing short-term lodging in hotels, motels, and other facilities.",
+          "naicsCode": "721"
+        },
+        {
+          "id": "food-services",
+          "name": "Food Services and Drinking Places",
+          "description": "Preparing meals, snacks, and beverages for immediate consumption.",
+          "naicsCode": "722"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "Educational Services",
+      "description": "Providing instruction and training in a wide variety of subjects.",
+      "sector": "Education",
+      "naicsCode": "61",
+      "subIndustries": [
+        {
+          "id": "elementary-secondary",
+          "name": "Elementary and Secondary Schools",
+          "description": "Providing academic instruction at the elementary and secondary level.",
+          "naicsCode": "6111"
+        },
+        {
+          "id": "colleges-universities",
+          "name": "Colleges, Universities, and Professional Schools",
+          "description": "Providing academic instruction at the post-secondary level.",
+          "naicsCode": "6113"
+        },
+        {
+          "id": "technical-trade",
+          "name": "Technical and Trade Schools",
+          "description": "Providing vocational and technical training.",
+          "naicsCode": "6115"
+        },
+        {
+          "id": "educational-support",
+          "name": "Educational Support Services",
+          "description": "Providing non-instructional services that support educational processes.",
+          "naicsCode": "6117"
+        }
+      ]
+    },
+    {
+      "id": "public-administration",
+      "name": "Public Administration",
+      "description": "Administering, overseeing, and managing public programs.",
+      "sector": "Public Administration",
+      "naicsCode": "92",
+      "subIndustries": [
+        {
+          "id": "executive-legislative",
+          "name": "Executive, Legislative, and General Government",
+          "description": "Executive and legislative functions of government.",
+          "naicsCode": "921"
+        },
+        {
+          "id": "justice-public-order",
+          "name": "Justice, Public Order, and Safety Activities",
+          "description": "Maintaining justice, public order, and safety.",
+          "naicsCode": "922"
+        },
+        {
+          "id": "administration-programs",
+          "name": "Administration of Human Resource Programs",
+          "description": "Administering programs for education, health, and social services.",
+          "naicsCode": "923"
+        },
+        {
+          "id": "national-security",
+          "name": "National Security and International Affairs",
+          "description": "Managing national security and international affairs.",
+          "naicsCode": "928"
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "name": "Utilities",
+      "description": "Providing electric power, natural gas, steam, water, and sewage removal.",
+      "sector": "Energy",
+      "naicsCode": "22",
+      "subIndustries": [
+        {
+          "id": "electric-power",
+          "name": "Electric Power Generation, Transmission and Distribution",
+          "description": "Generating, transmitting, and distributing electric power.",
+          "naicsCode": "2211"
+        },
+        {
+          "id": "natural-gas",
+          "name": "Natural Gas Distribution",
+          "description": "Distributing natural gas to consumers.",
+          "naicsCode": "2212"
+        },
+        {
+          "id": "water-sewage",
+          "name": "Water, Sewage, and Other Systems",
+          "description": "Operating water treatment plants and sewage systems.",
+          "naicsCode": "2213"
+        }
+      ]
+    }
+  ]
+}
